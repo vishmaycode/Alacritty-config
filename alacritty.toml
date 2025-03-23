@@ -1,0 +1,70 @@
+[window]
+startup_mode = "maximized" 
+
+# decorations = "None"
+decorations_theme_variant = "Dark" # "Light"
+
+opacity = 1.0
+
+padding.x = 0
+padding.y = 0
+
+[font]
+# normal.family = "JetBrainsMono Nerd Font"
+# bold.family = "JetBrainsMono Nerd Font"
+# italic.family = "JetBrainsMono Nerd Font"
+# bold_italic.family = "JetBrainsMono Nerd Font"
+size = 8.0
+
+normal                = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold                  = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic                = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+bold_italic           = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+
+[env]
+TERM                  = "xterm-256color"
+
+[selection]
+save_to_clipboard     = true
+
+[cursor.style]
+shape                 = "Underline"  # "Beam"
+blinking              = "Always"
+
+[cursor.vi_mode_style]
+shape                 = "Underline"  # "Block"
+blinking              = "On"  # "Off"
+
+[cursor]
+blink_interval        = 500
+blink_timeout         = 0
+#unfocused_hollow      = true
+#thickness             = 0.15
+
+[mouse]
+hide_when_typing      = true
+bindings = [
+  { mouse = "Middle", action = "PasteSelection" },
+]
+
+[keyboard]
+bindings = [
+  { key = "V",        mods = "Control|Shift", action = "Paste" },
+  { key = "C",        mods = "Control|Shift", action = "Copy" },
+  { key = "Paste",                            action = "Paste" },
+  { key = "Copy",                             action = "Copy" },
+  { key = "Insert",   mods = "Shift",         action = "PasteSelection" },
+  { key = "F",        mods = "Control|Shift", action = "SearchForward",     mode = "~Search" },
+  { key = "B",        mods = "Control|Shift", action = "SearchBackward",    mode = "~Search" },
+  { key = "Key0",     mods = "Control",       action = "ResetFontSize" },
+  { key = "Equals",   mods = "Control",       action = "IncreaseFontSize" },
+  { key = "Minus",    mods = "Control",       action = "DecreaseFontSize" },
+  { key = "L",        mods = "Control",       action = "ClearLogNotice" },
+  { key = "L",        mods = "Control",       chars  = "\f" },
+  { key = "PageUp",   mods = "Shift",         action = "ScrollPageUp",      mode = "~Alt" },
+  { key = "PageDown", mods = "Shift",         action = "ScrollPageDown",    mode = "~Alt" },
+  { key = "Up",       mods = "Shift",         action = "ScrollLineUp",      mode = "~Alt" },
+  { key = "Down",     mods = "Shift",         action = "ScrollLineDown",    mode = "~Alt" },
+  { key = "Home",     mods = "Shift",         action = "ScrollToTop",       mode = "~Alt" },
+  { key = "End",      mods = "Shift",         action = "ScrollToBottom",    mode = "~Alt" },
+]
