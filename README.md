@@ -27,4 +27,5 @@ alacritty
 
 ### References
 [https://ostechnix.com/alacritty-terminal-emulator/](https://ostechnix.com/alacritty-terminal-emulator/)
+
 [https://alacritty.org/config-alacritty.html](https://alacritty.org/config-alacritty.html)
